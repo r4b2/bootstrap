@@ -14,4 +14,7 @@ wget "https://s3.${AWS_REGION}.amazonaws.com/amazon-ssm-${AWS_REGION}/latest/deb
 dpkg -i /tmp/amazon-ssm-agent.deb
 systemctl enable --now amazon-ssm-agent
 
+ln -s /opt/bootstrap/vimrc /home/admin/.vimrc
+ln -s /opt/bootstrap/vimrc /root/.vimrc
+
 #shutdown -r now
